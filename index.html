@@ -5,83 +5,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Garam Choi | UX/UI Designer</title>
+  <title>Studio by G | UX/UI & Digital Design</title>
+  <meta name="description" content="The portfolio of an independent designer creating thoughtful digital experiences.">
 
-  <meta name="description"
-    content="UX/UI designer focused on digital experiences, visual design, and front-end development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <nav class="navigation">
-      <a href="index.html" class="logo">GARAM CHOI</a>
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">studio by g<span>.</span></a>
 
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
 
+    <!-- Hero Section -->
     <section class="hero">
-      <p class="eyebrow">UX/UI DESIGNER · DIGITAL EXPERIENCES</p>
+      <p class="eyebrow">UX/UI DESIGNER & DIGITAL CREATIVE</p>
 
       <h1>
-        Designing thoughtful digital
-        experiences through
-        <span>design and technology.</span>
+        Designing digital experiences
+        with <span>purpose.</span>
       </h1>
 
-      <p class="intro">
-        I combine user-centered design, visual creativity,
-        and front-end implementation to create
-        intuitive digital experiences.
+      <p class="hero-description">
+        I bring together thoughtful design, technology, and creativity
+        to create meaningful digital experiences.
       </p>
 
-      <a href="#work" class="button">Explore my work</a>
+      <a href="#work" class="primary-button">
+        Explore my work <span>↗</span>
+      </a>
+
+      <p class="hero-note">Based in Seattle, Washington · Available for opportunities</p>
     </section>
 
-    <section id="work" class="projects">
-      <h2>Selected Work</h2>
+    <!-- Selected Work -->
+    <section class="work-section" id="work">
 
-      <article class="project">
-        <img src="assets/images/uw-project.jpg"
-          alt="UW website design project">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A SELECTION OF MY WORK</p>
+          <h2>Selected projects<span>.</span></h2>
+        </div>
+        <p class="section-note">Designing with intention, building with purpose.</p>
+      </div>
 
-        <h3>UW Website Experience</h3>
-        <p>Website design · UX · Responsive design</p>
-        <a href="projects/uw-website.html">View case study →</a>
-      </article>
+      <div class="project-grid">
 
-      <article class="project">
-        <img src="assets/images/design-system.jpg"
-          alt="Design system components">
+        <article class="project-card">
+          <div class="project-image project-one">
+            <span>01</span>
+          </div>
+          <p class="project-category">WEB DESIGN · UX/UI</p>
+          <h3>University Web Experience</h3>
+          <p>Creating clearer, more engaging digital experiences.</p>
+          <a href="projects/uw-website.html">View case study ↗</a>
+        </article>
 
-        <h3>Cross-Platform Design System</h3>
-        <p>UI design · Figma · Design systems</p>
-        <a href="projects/design-system.html">View case study →</a>
-      </article>
+        <article class="project-card">
+          <div class="project-image project-two">
+            <span>02</span>
+          </div>
+          <p class="project-category">DESIGN SYSTEM · VISUAL DESIGN</p>
+          <h3>A Connected Design System</h3>
+          <p>Building a consistent and reusable visual language.</p>
+          <a href="projects/design-system.html">View case study ↗</a>
+        </article>
 
-      <article class="project">
-        <img src="assets/images/geo-project.jpg"
-          alt="Geospatial developer experience">
+        <article class="project-card">
+          <div class="project-image project-three">
+            <span>03</span>
+          </div>
+          <p class="project-category">PRODUCT DESIGN · GEO</p>
+          <h3>Geospatial Developer Experience</h3>
+          <p>Making complex mapping tools easier to understand and use.</p>
+          <a href="projects/geo-experience.html">View case study ↗</a>
+        </article>
 
-        <h3>Geospatial Developer Experience</h3>
-        <p>Product design · Front-end development</p>
-        <a href="projects/geo-experience.html">View case study →</a>
-      </article>
+        <article class="project-card">
+          <div class="project-image project-four">
+            <span>04</span>
+          </div>
+          <p class="project-category">PRODUCT DESIGN · E-COMMERCE</p>
+          <h3>Automotive Shopping Experience</h3>
+          <p>Exploring a more intuitive vehicle discovery experience.</p>
+          <a href="projects/automotive.html">View case study ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>Design meets functionality.</h2>
+      <p>
+        I'm a multidisciplinary designer interested in creating
+        thoughtful digital experiences through user-centered design,
+        visual storytelling, and front-end development.
+      </p>
+      <a href="about.html" class="text-link">More about me ↗</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Have a project in mind?</h2>
+      <p>I'd love to connect and explore new opportunities.</p>
+      <a href="mailto:YOUR-EMAIL@example.com" class="primary-button">
+        Get in touch ↗
+      </a>
     </section>
 
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Garam Choi Designed and developed by me.</p>
+    <a href="#" class="logo">studio by g<span>.</span></a>
+    <p>© 2026 Studio by G. Designed with intention.</p>
   </footer>
 
   <script src="assets/js/script.js"></script>
