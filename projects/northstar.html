@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Northstar | Adaptive Design System</title>
+
+    <link rel="stylesheet" href="../assets/CSS/style.css">
+    <link rel="stylesheet" href="northstar.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">← Back to Studio by G</a>
+    </header>
+
+    <main>
+
+        <section class="northstar-hero">
+            <p>ADAPTIVE DESIGN SYSTEM</p>
+
+            <h1>Northstar</h1>
+
+            <h2>Design with freedom. Build for everyone.</h2>
+
+            <p>
+                An adaptive design system that brings together
+                visual creativity, accessibility, and scalable
+                components to create thoughtful digital experiences.
+            </p>
+        </section>
+
+        <section class="northstar-studios" id="studios">
+
+            <div class="studios-heading">
+                <p>EXPLORE NORTHSTAR</p>
+                <h2>Design without limitations.</h2>
+                <p>
+                    Two connected studios that make creating
+                    beautiful, accessible digital experiences easier.
+                </p>
+            </div>
+
+            <div class="studios-grid">
+
+                <article class="studio-card">
+                    <span>01 / COLOR STUDIO</span>
+                    <h3>Find your visual direction.</h3>
+                    <p>
+                        Explore design aesthetics, generate harmonious
+                        color palettes, and create accessible themes
+                        that reflect your brand.
+                    </p>
+                    <span class="studio-status">Coming soon</span>
+                </article>
+
+                <article class="studio-card">
+                    <span>02 / ACCESSIBILITY STUDIO</span>
+                    <h3>Design for everyone.</h3>
+                    <p>
+                        Preview responsive components, explore
+                        accessibility settings, and test how
+                        your designs work across different experiences.
+                    </p>
+                    <span class="studio-status">Coming soon</span>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- NORTHSTAR COLOR STUDIO -->
+
+        <section class="northstar-color-studio" id="color-studio">
+
+            <div class="color-studio-heading">
+                <p>01 / NORTHSTAR COLOR STUDIO</p>
+
+                <h2>Find your visual identity.</h2>
+
+                <p>
+                    Explore aesthetics, discover harmonious colors,
+                    and create a visual language that feels uniquely yours.
+                </p>
+            </div>
+
+            <div class="color-studio-workspace">
+
+                <div class="color-studio-controls">
+
+                    <h3>Choose your aesthetic</h3>
+
+                    <p>
+                        Select a visual direction to begin exploring
+                        your design system.
+                    </p>
+
+                    <div class="aesthetic-options" role="group" aria-label="Choose an aesthetic">
+
+                        <button type="button" class="aesthetic-button active" data-style="editorial"
+                            aria-pressed="true">
+                            Editorial
+                        </button>
+
+                        <button type="button" class="aesthetic-button" data-style="modern" aria-pressed="false">
+                            Modern
+                        </button>
+
+                        <button type="button" class="aesthetic-button" data-style="organic" aria-pressed="false">
+                            Organic
+                        </button>
+                        <button type="button" class="aesthetic-button" data-style="chic" aria-pressed="false">
+                            Chic
+                        </button>
+
+                        <button type="button" class="aesthetic-button" data-style="minimalist" aria-pressed="false">
+                            Minimalist
+                        </button>
+
+                    </div>
+
+                    <!-- SECONDARY AESTHETIC -->
+
+                    <div class="aesthetic-blend">
+
+                        <label for="secondary-aesthetic">
+                            Combine with another aesthetic
+                        </label>
+
+                        <p>
+                            Add a second style to create a unique
+                            visual direction.
+                        </p>
+
+                        <select id="secondary-aesthetic">
+
+                            <option value="none">
+                                No additional style
+                            </option>
+
+                            <option value="editorial">
+                                Editorial
+                            </option>
+
+                            <option value="modern">
+                                Modern
+                            </option>
+
+                            <option value="organic">
+                                Organic
+                            </option>
+
+                            <option value="chic">
+                                Chic
+                            </option>
+
+                            <option value="minimalist">
+                                Minimalist
+                            </option>
+
+                        </select>
+
+                        <!-- CUSTOM BRAND COLOR -->
+
+                        <div class="brand-color-control">
+
+                            <label for="brand-color">
+                                Primary brand color
+                            </label>
+
+                            <p>
+                                Customize your brand's primary color.
+                            </p>
+
+                            <input type="color" id="brand-color" value="#252525">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="color-studio-preview">
+
+                    <p class="preview-label">LIVE DESIGN PREVIEW</p>
+
+                    <div class="brand-preview" id="brand-preview">
+
+                        <p>YOUR BRAND EXPERIENCE</p>
+
+                        <h3>Designed with intention.</h3>
+
+                        <p>
+                            Beautiful experiences begin with
+                            thoughtful design decisions.
+                        </p>
+
+                        <span class="preview-button">
+                            Explore more
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="northstar.js"></script>
+</body>
+
+</html>
