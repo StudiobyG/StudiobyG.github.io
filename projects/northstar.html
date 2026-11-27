@@ -163,6 +163,88 @@
 
                         </select>
 
+                        <!-- NORTHSTAR — COLOR TEMPERATURE -->
+
+                        <div class="color-temperature-control">
+
+                            <h4>Color temperature</h4>
+
+                            <p>
+                                Choose the overall warmth or coolness
+                                of your color palette.
+                            </p>
+
+                            <div class="temperature-options">
+
+                                <button type="button" class="temperature-button active" data-temperature="any"
+                                    aria-pressed="true">
+                                    Any
+                                </button>
+
+                                <button type="button" class="temperature-button" data-temperature="warm"
+                                    aria-pressed="false">
+                                    Warm
+                                </button>
+
+                                <button type="button" class="temperature-button" data-temperature="cool"
+                                    aria-pressed="false">
+                                    Cool
+                                </button>
+
+                                <button type="button" class="temperature-button" data-temperature="neutral"
+                                    aria-pressed="false">
+                                    Neutral
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- NORTHSTAR — COLOR MOOD -->
+
+                        <div class="color-mood-control">
+
+                            <h4 id="color-mood-heading">Color mood</h4>
+
+                            <p>
+                                Choose the personality and emotional
+                                character of your color palette.
+                            </p>
+
+                            <div class="mood-options" role="group" aria-labelledby="color-mood-heading">
+
+                                <button type="button" class="mood-button active" data-mood="any" aria-pressed="true">
+                                    Any
+                                </button>
+
+                                <button type="button" class="mood-button" data-mood="soft" aria-pressed="false">
+                                    Soft
+                                </button>
+
+                                <button type="button" class="mood-button" data-mood="muted" aria-pressed="false">
+                                    Muted
+                                </button>
+
+                                <button type="button" class="mood-button" data-mood="pastel" aria-pressed="false">
+                                    Pastel
+                                </button>
+
+                                <button type="button" class="mood-button" data-mood="vibrant" aria-pressed="false">
+                                    Vibrant
+                                </button>
+
+                                <button type="button" class="mood-button" data-mood="bold" aria-pressed="false">
+                                    Bold
+                                </button>
+
+                                <button type="button" class="mood-button" data-mood="earthy" aria-pressed="false">
+                                    Earthy
+                                </button>
+
+                            </div>
+
+                        </div>
+
                         <!-- CUSTOM BRAND COLOR -->
 
                         <div class="brand-color-control">
@@ -176,6 +258,70 @@
                             </p>
 
                             <input type="color" id="brand-color" value="#252525">
+
+                            <output id="brand-color-hex" for="brand-color">#252525</output>
+
+                            <button type="button" id="reset-brand-color" class="reset-brand-color">
+                                Reset to aesthetic default
+                            </button>
+
+
+                            <!-- RECENT BRAND COLORS -->
+
+                            <div class="color-history">
+                                <h4>Recent colors</h4>
+
+                                <p>
+                                    Your recently selected brand colors will appear here.
+                                </p>
+
+                                <div id="color-history-swatches" class="color-history-swatches">
+                                </div>
+                            </div>
+
+
+                            <!-- SUGGESTED COLOR PALETTES -->
+
+                            <div class="suggested-palettes">
+
+                                <h4>Suggested color palettes</h4>
+
+                                <p>
+                                    Discover harmonious color combinations inspired
+                                    by your selected aesthetics.
+                                </p>
+
+                                <!-- PALETTE ACCESSIBILITY FILTER -->
+
+                                <div class="palette-filter">
+
+                                    <label for="palette-filter">
+                                        Filter by accessibility
+                                    </label>
+
+                                    <select id="palette-filter">
+
+                                        <option value="all">
+                                            All palettes
+                                        </option>
+
+                                        <option value="passing">
+                                            Passing all AA contrast checks
+                                        </option>
+
+                                        <option value="needs-improvement">
+                                            Needs contrast improvement
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <div id="palette-suggestions" class="palette-suggestions">
+                                </div>
+
+                            </div>
+
 
                         </div>
 
@@ -201,6 +347,44 @@
                         <span class="preview-button">
                             Explore more
                         </span>
+
+                        <span class="preview-secondary-button">Learn more</span>
+
+                        <div class="preview-feature-card">
+                            <span class="preview-accent-label">Featured</span>
+
+                            <h4>Thoughtful by design.</h4>
+
+                            <p>
+                                Creating meaningful experiences through
+                                clarity, consistency, and accessibility.
+                            </p>
+                        </div>
+
+                        <!-- WCAG CONTRAST CHECKER -->
+
+                        <section class="wcag-checker">
+
+                            <div class="wcag-header">
+                                <span class="wcag-eyebrow">ACCESSIBILITY</span>
+
+                                <h3>Color contrast checker</h3>
+
+                                <p>
+                                    Evaluate your color combinations against
+                                    WCAG 2.2 accessibility guidelines.
+                                </p>
+                            </div>
+
+                            <div id="wcag-results" class="wcag-results" aria-live="polite">
+                            </div>
+
+                            <p class="wcag-note">
+                                Contrast testing is one part of creating
+                                an accessible digital experience.
+                            </p>
+
+                        </section>
 
                     </div>
 

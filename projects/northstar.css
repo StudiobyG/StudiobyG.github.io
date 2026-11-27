@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
 
 /* NORTHSTAR DESIGN SYSTEM */
@@ -22,19 +21,19 @@ body {
 
 /* HEADER */
 
-body > header {
+body>header {
   padding: 32px 8%;
   border-bottom: 1px solid var(--ns-border);
 }
 
-body > header a {
+body>header a {
   color: var(--ns-text);
   font-size: 12px;
   text-decoration: none;
   letter-spacing: 0.3px;
 }
 
-body > header a:hover {
+body>header a:hover {
   color: var(--ns-accent);
 }
 
@@ -46,7 +45,7 @@ body > header a:hover {
   padding: 130px 8% 160px;
 }
 
-.northstar-hero > p:first-child {
+.northstar-hero>p:first-child {
   color: var(--ns-accent);
   font-size: 11px;
   font-weight: 600;
@@ -71,7 +70,7 @@ body > header a:hover {
   letter-spacing: -1px;
 }
 
-.northstar-hero > p:last-child {
+.northstar-hero>p:last-child {
   max-width: 580px;
   color: var(--ns-muted);
   font-size: 15px;
@@ -102,7 +101,7 @@ body > header a:hover {
   margin-bottom: 55px;
 }
 
-.studios-heading > p:first-child {
+.studios-heading>p:first-child {
   color: var(--ns-accent);
   font-size: 11px;
   font-weight: 600;
@@ -117,7 +116,7 @@ body > header a:hover {
   letter-spacing: -1.5px;
 }
 
-.studios-heading > p:last-child {
+.studios-heading>p:last-child {
   max-width: 520px;
   color: var(--ns-muted);
   font-size: 14px;
@@ -150,7 +149,7 @@ body > header a:hover {
   box-shadow: 0 16px 40px rgba(36, 49, 61, 0.07);
 }
 
-.studio-card > span:first-child {
+.studio-card>span:first-child {
   color: var(--ns-accent);
   font-size: 10px;
   font-weight: 600;
@@ -219,7 +218,7 @@ body > header a:hover {
   margin-bottom: 48px;
 }
 
-.color-studio-heading > p:first-child {
+.color-studio-heading>p:first-child {
   color: var(--ns-accent);
   font-size: 11px;
   font-weight: 600;
@@ -234,7 +233,7 @@ body > header a:hover {
   letter-spacing: -1.5px;
 }
 
-.color-studio-heading > p:last-child {
+.color-studio-heading>p:last-child {
   max-width: 550px;
   color: var(--ns-muted);
   font-size: 14px;
@@ -266,7 +265,7 @@ body > header a:hover {
   font-weight: 400;
 }
 
-.color-studio-controls > p {
+.color-studio-controls>p {
   margin-bottom: 30px;
   color: var(--ns-muted);
   font-size: 13px;
@@ -291,8 +290,8 @@ body > header a:hover {
   font-size: 12px;
   cursor: pointer;
   transition: background 0.2s ease,
-              color 0.2s ease,
-              border-color 0.2s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .aesthetic-button:hover {
@@ -336,7 +335,7 @@ body > header a:hover {
   box-sizing: border-box;
 }
 
-.brand-preview > p:first-child {
+.brand-preview>p:first-child {
   margin: 0 0 28px;
   font-size: 10px;
   font-weight: 600;
@@ -351,7 +350,7 @@ body > header a:hover {
   line-height: 1.2;
 }
 
-.brand-preview > p:nth-of-type(2) {
+.brand-preview>p:nth-of-type(2) {
   max-width: 330px;
   margin-bottom: 30px;
   font-size: 13px;
@@ -475,4 +474,926 @@ body > header a:hover {
 .brand-color-control input[type="color"]:focus-visible {
   outline: 3px solid var(--ns-accent);
   outline-offset: 3px;
+}
+
+/* NORTHSTAR — RECENT COLORS */
+
+.color-history {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E2DC;
+}
+
+.color-history h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.color-history p {
+  margin: 0 0 16px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #777777;
+}
+
+.color-history-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-history-swatch {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #D8D5D0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-history-swatch:hover {
+  transform: translateY(-3px);
+}
+
+.color-history-swatch:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .color-history-swatch {
+    transition: none;
+  }
+
+  .color-history-swatch:hover {
+    transform: none;
+  }
+}
+
+/* NORTHSTAR — RESET BRAND COLOR */
+
+.reset-brand-color {
+  display: block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: transparent;
+  border: 1px solid #D8D5D0;
+  border-radius: 6px;
+  color: #595959;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-brand-color:hover {
+  background-color: #F0EDE8;
+  border-color: #B8B4AD;
+  color: #252525;
+}
+
+.reset-brand-color:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reset-brand-color {
+    transition: none;
+  }
+}
+
+/* NORTHSTAR — SUGGESTED COLOR PALETTES */
+
+.suggested-palettes {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E2DC;
+}
+
+.suggested-palettes h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.suggested-palettes p {
+  margin: 0 0 18px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #666666;
+}
+
+.palette-suggestions {
+  display: grid;
+  gap: 16px;
+}
+
+.palette-card {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E5E2DC;
+  border-radius: 8px;
+}
+
+.palette-name {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.palette-swatches {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.palette-color {
+  min-width: 0;
+}
+
+.palette-swatch {
+  width: 100%;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+.palette-role {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.palette-hex {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #666666;
+  overflow-wrap: anywhere;
+}
+
+/* NORTHSTAR — APPLY PALETTE BUTTON */
+
+.apply-palette-button {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px 16px;
+  background: transparent;
+  border: 1px solid #D8D5D0;
+  border-radius: 6px;
+  color: #252525;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.apply-palette-button:hover {
+  background-color: #252525;
+  border-color: #252525;
+  color: #FFFFFF;
+}
+
+.apply-palette-button:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .apply-palette-button {
+    transition: none;
+  }
+}
+
+/* NORTHSTAR — ACTIVE PALETTE STATE */
+
+.palette-card.active {
+  border-color: #252525;
+  box-shadow: 0 0 0 1px #252525;
+  background-color: #FAF9F6;
+}
+
+.palette-card.active .apply-palette-button {
+  background-color: #252525;
+  border-color: #252525;
+  color: #FFFFFF;
+}
+
+.palette-card.active .apply-palette-button::before {
+  content: "✓";
+  margin-right: 8px;
+}
+
+/* NORTHSTAR — ADDITIONAL PREVIEW COMPONENTS */
+
+.preview-secondary-button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px 0 0 8px;
+  background-color: #74665A;
+  color: #FFFFFF;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.preview-feature-card {
+  margin-top: 28px;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 12px;
+}
+
+.preview-accent-label {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #B89B65;
+  color: #252525;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.preview-feature-card h4 {
+  margin: 16px 0 8px;
+  font-size: 22px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.preview-feature-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: inherit;
+}
+
+/* NORTHSTAR — WCAG CONTRAST CHECKER */
+
+.wcag-checker {
+  margin-top: 32px;
+  padding: 28px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E2DC;
+  border-radius: 12px;
+  color: #252525;
+}
+
+.wcag-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #595959;
+}
+
+.wcag-header h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #252525;
+}
+
+.wcag-header p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #595959;
+}
+
+.wcag-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.wcag-note {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #E5E2DC;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #595959;
+}
+
+/* NORTHSTAR — WCAG CONTRAST RESULTS */
+
+.wcag-result {
+  padding: 20px;
+  background-color: #FAFAF8;
+  border: 1px solid #E5E2DC;
+  border-radius: 8px;
+}
+
+.wcag-result h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.wcag-result p {
+  margin: 6px 0;
+  font-size: 12px;
+  color: #595959;
+}
+
+.wcag-result strong {
+  display: block;
+  margin: 14px 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #252525;
+  font-variant-numeric: tabular-nums;
+}
+
+.wcag-result .wcag-pass,
+.wcag-result .wcag-fail {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px 6px 0 0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.wcag-result .wcag-pass {
+  background-color: #E7F3EB;
+  color: #245C38;
+}
+
+.wcag-result .wcag-fail {
+  background-color: #FCE8E8;
+  color: #9B2929;
+}
+
+.wcag-pass::before {
+  content: "✓ ";
+}
+
+.wcag-fail::before {
+  content: "✕ ";
+}
+
+/* NORTHSTAR — WCAG RECOMMENDATIONS */
+
+.wcag-recommendation {
+  margin-top: 18px;
+  padding: 16px;
+  background-color: #EDF3FA;
+  border-left: 3px solid #2257A3;
+  border-radius: 4px;
+}
+
+.wcag-recommendation h5 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #20324D;
+}
+
+.wcag-recommendation p {
+  margin: 6px 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #20324D;
+}
+
+/* NORTHSTAR — WCAG CORRECTION BUTTON */
+
+.wcag-fix-button {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #2257A3;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.wcag-fix-button:hover {
+  background-color: #193F78;
+}
+
+.wcag-fix-button:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wcag-fix-button {
+    transition: none;
+  }
+}
+
+/* NORTHSTAR — WCAG BEFORE AND AFTER */
+
+.wcag-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.wcag-comparison-item {
+  min-width: 0;
+  padding: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #D8E2EF;
+  border-radius: 8px;
+}
+
+.wcag-comparison-item>span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #20324D;
+}
+
+.wcag-comparison-sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wcag-comparison-item>p:not(.wcag-pass):not(.wcag-fail) {
+  margin: 12px 0 6px;
+  font-size: 22px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: #252525;
+}
+
+@media (max-width: 600px) {
+  .wcag-comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* NORTHSTAR — PALETTE ACCESSIBILITY SUMMARY */
+
+.palette-accessibility {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #F5F5F2;
+  border: 1px solid #E5E2DC;
+  border-radius: 8px;
+}
+
+.palette-accessibility-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.palette-accessibility-header h6 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.palette-accessibility-score {
+  font-size: 12px;
+  font-weight: 600;
+  color: #595959;
+}
+
+.palette-accessibility-results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.palette-accessibility-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #454545;
+}
+
+.palette-accessibility-row>span:nth-child(2) {
+  font-variant-numeric: tabular-nums;
+}
+
+.palette-pass,
+.palette-fail {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.palette-pass {
+  background-color: #E7F3EB;
+  color: #245C38;
+}
+
+.palette-fail {
+  background-color: #FCE8E8;
+  color: #9B2929;
+}
+
+/* NORTHSTAR — PALETTE EMPTY STATE */
+
+.palette-empty-state {
+  padding: 32px 24px;
+  background-color: #FAFAF8;
+  border: 1px dashed #C9C6C0;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.palette-empty-state h5 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.palette-empty-state p {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #595959;
+}
+
+.show-all-palettes-button {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid #252525;
+  border-radius: 6px;
+  color: #252525;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.show-all-palettes-button:hover {
+  background-color: #252525;
+  color: #FFFFFF;
+}
+
+.show-all-palettes-button:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .show-all-palettes-button {
+    transition: none;
+  }
+}
+
+/* NORTHSTAR — COLOR TEMPERATURE */
+
+.color-temperature-control {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.color-temperature-control h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.color-temperature-control p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #595959;
+}
+
+.temperature-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.temperature-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #D5D2CC;
+  border-radius: 6px;
+  color: #454545;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.temperature-button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #767676;
+}
+
+.temperature-button[data-temperature="any"]::before {
+  background: linear-gradient(135deg,
+      #C99475,
+      #D5D0C6,
+      #829FB7);
+}
+
+.temperature-button[data-temperature="warm"]::before {
+  background-color: #C99475;
+}
+
+.temperature-button[data-temperature="cool"]::before {
+  background-color: #829FB7;
+}
+
+.temperature-button[data-temperature="neutral"]::before {
+  background-color: #B5B0A7;
+}
+
+.temperature-button:hover {
+  background-color: #F5F3EF;
+  border-color: #767676;
+}
+
+.temperature-button.active {
+  background-color: #252525;
+  border-color: #252525;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.temperature-button:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .temperature-button {
+    transition: none;
+  }
+}
+
+/* NORTHSTAR — COLOR MOOD */
+
+.color-mood-control {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.color-mood-control h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252525;
+}
+
+.color-mood-control p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #595959;
+}
+
+.mood-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mood-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 76px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #D5D2CC;
+  border-radius: 6px;
+  color: #454545;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.mood-button::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 24px;
+  border-radius: 4px;
+}
+
+/* MOOD COLOR PREVIEWS */
+
+.mood-button[data-mood="any"] {
+  grid-column: 1 / -1;
+}
+
+.mood-button[data-mood="any"]::before {
+  background: linear-gradient(90deg,
+      #B5A49C 0% 33.33%,
+      #829FB7 33.33% 66.66%,
+      #D5D0C6 66.66% 100%);
+}
+
+.mood-button[data-mood="soft"]::before {
+  background: linear-gradient(90deg,
+      #A58D92 0% 33.33%,
+      #D6BFC3 33.33% 66.66%,
+      #EAD9D6 66.66% 100%);
+}
+
+.mood-button[data-mood="muted"]::before {
+  background: linear-gradient(90deg,
+      #68786B 0% 33.33%,
+      #9DA995 33.33% 66.66%,
+      #D1D5C5 66.66% 100%);
+}
+
+.mood-button[data-mood="pastel"]::before {
+  background: linear-gradient(90deg,
+      #C5B9E3 0% 33.33%,
+      #B9DCE7 33.33% 66.66%,
+      #F3D5DD 66.66% 100%);
+}
+
+.mood-button[data-mood="vibrant"]::before {
+  background: linear-gradient(90deg,
+      #3059C9 0% 33.33%,
+      #E97638 33.33% 66.66%,
+      #E5B92F 66.66% 100%);
+}
+
+.mood-button[data-mood="bold"]::before {
+  background: linear-gradient(90deg,
+      #202C49 0% 33.33%,
+      #963B4A 33.33% 66.66%,
+      #B78A40 66.66% 100%);
+}
+
+.mood-button[data-mood="earthy"]::before {
+  background: linear-gradient(90deg,
+      #655B42 0% 33.33%,
+      #A47B5C 33.33% 66.66%,
+      #C6B99B 66.66% 100%);
+}
+
+/* INTERACTION STATES */
+
+.mood-button:hover {
+  background-color: #F5F3EF;
+  border-color: #767676;
+}
+
+.mood-button.active {
+  background-color: #252525;
+  border-color: #252525;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.mood-button:focus-visible {
+  outline: 3px solid #2257A3;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mood-button {
+    transition: none;
+  }
+}
+
+/* NORTHSTAR — PALETTE CLASSIFICATION TAGS */
+
+.palette-classification {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 20px 0;
+  padding-top: 16px;
+  border-top: 1px solid #E5E2DC;
+}
+
+.palette-classification-group h6 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #595959;
+}
+
+.palette-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.palette-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #F5F5F2;
+  border: 1px solid #E5E2DC;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #454545;
+}
+
+/* TEMPERATURE TAG INDICATORS */
+
+.temperature-tag::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #767676;
+}
+
+.temperature-tag[data-temperature="warm"] {
+  background-color: #F8F0EA;
+}
+
+.temperature-tag[data-temperature="warm"]::before {
+  background-color: #C99475;
+}
+
+.temperature-tag[data-temperature="cool"] {
+  background-color: #EDF3F8;
+}
+
+.temperature-tag[data-temperature="cool"]::before {
+  background-color: #829FB7;
+}
+
+.temperature-tag[data-temperature="neutral"] {
+  background-color: #F1F0ED;
+}
+
+.temperature-tag[data-temperature="neutral"]::before {
+  background-color: #B5B0A7;
+}
+
+/* MOOD TAGS */
+
+.mood-tag {
+  background-color: #F5F5F2;
+  color: #454545;
 }
